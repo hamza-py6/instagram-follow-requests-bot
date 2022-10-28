@@ -33,10 +33,10 @@ def login():
     username = WebDriverWait(driver,10).until(
         EC.presence_of_element_located((By.NAME,'username')))
     username.clear()
-    username.send_keys("_hamza.py")
+    username.send_keys("------")
     password = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.NAME,'password')))
-    password.send_keys("init5EFPig")
+    password.send_keys("-----")
 
     login = driver.find_element(
         By.CSS_SELECTOR, "button[type='submit']")
